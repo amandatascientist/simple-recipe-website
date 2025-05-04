@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Recipe Generator</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#generate">Generate Recipe</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to Recipe Generator</h1>
+            <p>Enter your available ingredients and get personalized recipe suggestions!</p>
+            <button onclick="scrollToGenerator()">Get Started</button>
+        </section>
+
+        <section id="generate" class="generator">
+            <h2>Generate Your Recipe</h2>
+            <div class="input-section">
+                <div class="ingredient-input">
+                    <input type="text" id="ingredientInput" placeholder="Enter an ingredient (e.g., chicken, rice)">
+                    <button onclick="addIngredient()">Add</button>
+                </div>
+                <div class="selected-ingredients" id="selectedIngredients">
+                    <!-- Selected ingredients will appear here -->
+                </div>
+                <button class="generate-btn" onclick="generateRecipe()">Generate Recipe</button>
+            </div>
+            <div class="recipe-result" id="recipeResult">
+                <!-- Generated recipe will appear here -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Our recipe generator helps you create delicious meals using the ingredients you have at home. No more wondering what to cook!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Generator. All rights reserved by Aman Singh.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
